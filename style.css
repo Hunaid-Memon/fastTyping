@@ -1,0 +1,114 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.settings-btn{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.settings{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(20, 34, 34);
+    height: 100px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.settings.hide{
+    transform: translateY(-100%);
+}
+
+.settings label{
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+.settings select {
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.container{
+    background-color: rgb(20, 34, 34);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 3px 10px 20px rgba(219, 218, 218, 0.9);
+    color: white;
+    position: relative;
+}
+
+.container h2{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+.container h1 {
+    margin-top: 30px;
+}
+
+.container input {
+    border: 0;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.scorecard{
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.timer{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.gameover{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(20, 34, 34);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
